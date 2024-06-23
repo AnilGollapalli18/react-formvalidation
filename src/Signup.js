@@ -113,7 +113,7 @@ function Signup() {
         <div>
           <button type="submit" className='submit'>Signup</button>
         </div>
-        <p>Already have an Account ? Please <Link to="/signin"> Login</Link></p>
+        <p className='sign-p'>Already have an Account ? Please <Link to="/signin"> Login</Link></p>
         <div>
         <button onClick={handleLoginWithFacebook} className='buttonf'><box-icon type='logo' name='facebook'></box-icon>Login with Facebook</button>
         <button onClick={handleLoginWithGoogle} className='buttong'><box-icon type='logo' name='google'></box-icon>Login with Google</button>

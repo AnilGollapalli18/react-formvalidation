@@ -36,7 +36,7 @@ function Signin() {
     const errors = validate();
     if (Object.keys(errors).length === 0) {
       try {
-        const response = await axios.post(' ', form);
+        const response = await axios.post('https://66715302e083e62ee43b1021.mockapi.io/users', form);
         setMessage(response.data.message);
         setErrors({});
         alert('Login successful!');
@@ -55,7 +55,7 @@ function Signin() {
   const handleForgotPassword = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('', form);
+      const response = await axios.post('https://66715302e083e62ee43b1021.mockapi.io/users', form);
       setMessage(response.data.message);
       setErrors('');
     } catch (error) {
